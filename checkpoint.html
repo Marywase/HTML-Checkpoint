@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <style>
+      .detail {
+        font-family: tahoma;
+        color: rgb(224, 59, 205);
+        font-weight: 300px;
+        transition: background-color 0.15s, text-decoration 0.15s;
+        width: 450px;
+        line-height: 20px;
+      }
+
+      .design:hover {
+        text-decoration: underline;
+        color: rgb(219, 13, 82);
+      }
+
+      .copyright {
+        font-family: arial;
+        color: rgb(224, 59, 205);
+      }
+
+      .name {
+        font-family: roboto;
+        color: rgb(224, 59, 205);
+      }
+
+      .submit {
+        background-color: rgb(211, 56, 193);
+        border: none;
+        border-radius: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        font-style: sans-serif;
+        transition: all 0.1s ease;
+      }
+      .submit:hover {
+        background-color: rgb(211, 56, 193);
+        border: none;
+        border-radius: 5px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .video.mp4 {
+        position: relative;
+        top: -30px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .video-description {
+        font-size: 16px;
+        color: rgb(117, 44, 44);
+        width: 500x;
+        line-height: 22px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="detail">
+        I'm a <span class="design"> product designer</span>, always ready to
+        create seamless app. Feel free to send me an email.
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>My Work</h2>
+      <li>Project 1</li>
+      <p class="video-description">
+        One of my best work displayed at the New York Times Square!
+      </p>
+      <video class="video.mp4" width="350" height="240" controls>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+      <p></p>
+      <li>Project 2</li>
+      <p class="video-description">An E-commerce app for female clothing.</p>
+      <video class="video.mp4" width="350" height="240" controls>
+        <source src="mobile video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <table border="1">
+        <tr>
+          <th>Experience</th>
+          <th>Years</th>
+        </tr>
+        <tr>
+          <td>Designer</td>
+          <td>2 years</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" name="name" />
+        <br /><br />
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <br /><br />
+        <button type="submit" class="submit">Send</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        <span class="copyright">&copy;</span> 2025<span class="name"> Mary</span
+        >. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
